@@ -27,12 +27,15 @@ function generatePassword() {
   // Conditional statement that alerts user if input is out of character range
   if (pwLength < 8 || pwLength > 128) {
     window.alert("Please choose from 8 to 128 characters. Try again!");
-  } else {
+    var pwLength = window.prompt("How long would you like password?" + "\nChoose from 8 to 128 characters.");
+  } 
+
+  // Criteria continued
     var pwUpper = window.confirm("Use uppercase letters?");
     var pwLower = window.confirm("Use lowercase letters?");
     var pwNumbers = window.confirm("Use numbers?");
     var pwSpecial = window.confirm("Use special characters? !@# etc...");
-  }
+  
   //   Variable equal to an array of charCodes
   var charCodes = [];
 

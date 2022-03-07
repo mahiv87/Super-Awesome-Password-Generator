@@ -100,7 +100,7 @@ h1 {
 .btn {
   animation-name: pulse;
 
-  animation-duration: 2.5s;
+  animation-duration: 3s;
 
   animation-iteration-count: infinite;
 }
@@ -116,6 +116,12 @@ h1 {
     transform: scale(1.05);
   }
   50% {
+    transform: scale(1);
+  }
+  65% {
+    transform: scale(1.05);
+  }
+  80%{
     transform: scale(1);
   }
   100% {
