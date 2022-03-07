@@ -5,10 +5,10 @@
 ## Description
 
 <ul>
-    <li>For this project my goal was to create my personal portfolio to allow potential employers to view my work.</li>
-    <li>I used CSS Grid, a linear-gradient background, text-shadow, and box-shadow for the hover transitions.</li>
-    <li>The work I have completed provides a visually pleasing UI, that contains content only important to employers.</li>
-    <li>My css grid, and form making skills were strengthened during this project.</li>
+    <li>For this project my goal was to create a random password generator.</li>
+    <li>The UI provides a clean, and fun user experience.</li>
+    <li>This was my first project to feature Javascript. The hardest part for me was knowing where to start.
+        Once I got started, everything began to make sense and was easier for me to visualize the how the code works.</li>
 </ul>
 
 ---
@@ -24,7 +24,7 @@
 ---
 
 ## Link
-https://mahiv87.github.io/myPortfolio/
+https://mahiv87.github.io/Super-Awesome-Password-Generator/
 
 ---
 
