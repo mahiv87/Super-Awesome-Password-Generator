@@ -12,6 +12,15 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+// Function to create an array of ASCII codes in sequential order from lowest to highest
+function characterArray(low, high) {
+  var array = [];
+  for (let i = low; i <= high; i++) {
+    array.push(i);
+  }
+  return array;
+}
+
 // Variables with value of characterArray function
 var abcUpper = characterArray(65, 90);
 var abcLower = characterArray(97, 122);
@@ -27,7 +36,7 @@ function generatePassword() {
   // Conditional statement that alerts user if input is out of character range
   if (pwLength < 8 || pwLength > 128) {
     window.alert("Please choose from 8 to 128 characters. Try again!");
-    var pwLength = window.prompt("How long would you like password?" + "\nChoose from 8 to 128 characters.");
+    return;
   } 
 
   // Criteria continued
@@ -54,11 +63,4 @@ function generatePassword() {
   return pwArray.join("");
 }
 
-// Function to create an array of ASCII codes in sequential order from lowest to highest
-function characterArray(low, high) {
-  var array = [];
-  for (let i = low; i <= high; i++) {
-    array.push(i);
-  }
-  return array;
-}
+
