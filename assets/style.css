@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
 *,
 *::before,
@@ -149,6 +151,8 @@ button[disabled] {
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 85px;
+  /* font-family: 'Share Tech Mono', monospace; */
+  font-family: 'Space Mono', monospace;
   font-size: 1.2rem;
   text-align: center;
   margin-top: 10px;
