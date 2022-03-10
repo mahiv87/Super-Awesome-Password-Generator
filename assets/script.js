@@ -29,22 +29,26 @@ var special = characterArray(33, 47);
 
 // This function generates the password
 function generatePassword() {
-  
   // Criteria Prompts
-  var pwLength = window.prompt("How long would you like password?" + "\nChoose from 8 to 128 characters.");
+  var pwLength = parseInt(
+    window.prompt("How long would you like password?" + "\nChoose from 8 to 128 characters."));
 
-  // Conditional statement that alerts user if input is out of character range
-  if (pwLength < 8 || pwLength > 128) {
+  // Conditional statement that alerts user 
+  // if input is out of character range, or input is not a number
+  if (isNaN(pwLength)) {
+    window.alert("Enter numbers only. Try again!");
+    return;
+  } else if (pwLength < 8 || pwLength > 128) {
     window.alert("Please choose from 8 to 128 characters. Try again!");
     return;
-  } 
+  }
 
   // Criteria continued
-    var pwUpper = window.confirm("Use uppercase letters?");
-    var pwLower = window.confirm("Use lowercase letters?");
-    var pwNumbers = window.confirm("Use numbers?");
-    var pwSpecial = window.confirm("Use special characters? !@# etc...");
-  
+  var pwUpper = window.confirm("Use uppercase letters?");
+  var pwLower = window.confirm("Use lowercase letters?");
+  var pwNumbers = window.confirm("Use numbers?");
+  var pwSpecial = window.confirm("Use special characters? !@# etc...");
+
   //   Variable equal to an array of charCodes
   var charCodes = [];
 
@@ -62,5 +66,3 @@ function generatePassword() {
   }
   return pwArray.join("");
 }
-
-
